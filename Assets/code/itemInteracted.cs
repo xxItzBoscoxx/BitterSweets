@@ -24,6 +24,7 @@ public class itemInteracted : MonoBehaviour
         Debug.Log("here");
         if (Input.GetMouseButtonDown(0)) {
             itemName = gameObject.tag;
+            itemClicked = true;
         }
     }
 }
