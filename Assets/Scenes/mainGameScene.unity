@@ -531,32 +531,54 @@ MonoBehaviour:
     names:
     - Dog
     - Human
-    - Human
-    - Dog
-    - Human
-    - Dog
-    - Human
     - Dog
     - Human
     - Bitter Sweets
+    - Human
+    - Bitter Sweets
+    - Human
+    - Bitter Sweets
+    - Human
+    - Bitter Sweets
+    - Human
+    - Bitter Sweets
+    - Human
+    - Bitter Sweets
     sentences:
-    - '*Scratches at door*'
-    - '*Shakes his head*'
-    - I'm sorry, boy, but we can't go outside right now. It's not safe out there.
-    - '*Whines and continues to scratch at the door*'
-    - I know you want to go outside and play, but we can't. There was a nuclear explosion,
-      and it's not safe for us to be outside.
-    - '*Looks at the human, still not understanding*'
-    - Trust me, buddy, I wish we could go outside too. But we have to stay in here
-      to stay safe. We'll find something to do, I promise.
-    - '*Whines again but eventually gives up and goes to lay down in his favorite
-      spot*'
-    - I wish I could explain everything to you, but I know you don't understand.
-      I just want you to know that I'm here with you, and I'll do everything I can
-      to keep us safe.
-    - The human gets up and goes to the kitchen to prepare some food for the both
-      of them. The dog watches him, still curious about what's going on outside but
-      content to be with his human.
+    - '*Looks up at the human expectantly, his tail wagging*'
+    - What's up, buddy? Do you need something?
+    - '*Continues to look at the human, his gaze unwavering*'
+    - Oh, I see. You want to play, don't you?
+    - The dog barks excitedly, and the human smiles.
+    - Okay, let's play. But we have to be careful not to make too much noise, okay?
+      We don't want to attract any unwanted attention.
+    - 'The human gets up from the couch and rummages through a drawer, eventually
+      pulling out a small ball. The dog''s eyes light up, and he jumps off the couch,
+      ready to play.
+
+'
+    - Here you go, buddy. Let's see if you can catch it.
+    - 'The human tosses the ball, and the dog chases after it, his tail wagging furiously.
+      They play for a little while, the human tossing the ball and the dog happily
+      fetching it.
+
+'
+    - You're such a good boy, buddy. I'm so glad we can still have a little bit of
+      fun, even in times like these.
+    - The dog barks in agreement, and the human laughs.
+    - Okay, okay. One more throw, and then we have to take a break, okay?
+    - 'The human throws the ball one more time, and the dog chases after it. They
+      both take a break, panting from their playtime, but the dog looks up at the
+      human, ready to play some more.
+
+'
+    - Not right now, buddy. We'll play again later. But for now, we have to rest.
+    - 'The dog looks a little disappointed, but he lays down at the human''s feet,
+      content to be with his human. They sit together in silence, the human lost
+      in thought, and the dog watching him closely, as if trying to understand what''s
+      going on.
+
+'
 --- !u!114 &478608070
 MonoBehaviour:
   m_ObjectHideFlags: 0
