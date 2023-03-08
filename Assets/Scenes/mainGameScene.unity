@@ -1261,31 +1261,40 @@ MonoBehaviour:
     - Dog
     - Human
     - Human
-    - Dog
     - Human
     - Dog
+    - Human
+    - Human
     - Human
     - Dog
     - Human
     - Bitter Sweets
     sentences:
-    - '*Scratches at door*'
-    - '*Shakes his head*'
-    - I'm sorry, boy, but we can't go outside right now. It's not safe out there.
-    - '*Whines and continues to scratch at the door*'
-    - I know you want to go outside and play, but we can't. There was a nuclear explosion,
-      and it's not safe for us to be outside.
-    - '*Looks at the human, still not understanding*'
-    - Trust me, buddy, I wish we could go outside too. But we have to stay in here
-      to stay safe. We'll find something to do, I promise.
-    - '*Whines again but eventually gives up and goes to lay down in his favorite
-      spot*'
+    - '*Looks out the window at the mushroom cloud in the distance, and whimpers
+      softly*'
+    - It's a scary sight, isn't it?
+    - '*Walks over to the window and looks out, his expression solemn*'
+    - I never thought it would come to this. The world was already in such a fragile
+      state, and it just took one mistake, one moment of miscommunication, to bring
+      us all to the brink of destruction.
+    - '*Looks up at the human, listening to his words but not understanding their
+      meaning*'
+    - It's hard to believe that just a few days ago, everything was so normal. People
+      were going about their lives, doing their jobs, spending time with their families.
+      And now... now it's all gone.
+    - '*Looks down at the dog and strokes his fur*'
+    - But we're still here, buddy. You and me. And as long as we're together, we'll
+      make it through this.
+    - '*Wags his tail and licks the human''s hand, sensing the comfort in his words*'
     - I wish I could explain everything to you, but I know you don't understand.
-      I just want you to know that I'm here with you, and I'll do everything I can
-      to keep us safe.
-    - The human gets up and goes to the kitchen to prepare some food for the both
-      of them. The dog watches him, still curious about what's going on outside but
-      content to be with his human.
+      All you know is that something bad has happened, and we have to stay inside
+      to stay safe. But we'll find a way to make it through, I promise.
+    - 'The human sits down next to the dog and begins to pet him, lost in thought
+      as he thinks about the world outside and what the future might hold. The dog
+      rests his head on the human''s lap, content to be with his human and hopeful
+      for what might come next.
+
+'
 --- !u!114 &776313699
 MonoBehaviour:
   m_ObjectHideFlags: 0
