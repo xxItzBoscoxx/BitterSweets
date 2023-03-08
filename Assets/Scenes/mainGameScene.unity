@@ -3340,31 +3340,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Dog
-    - Human
-    - Human
-    - Dog
+    - Bitter Sweet
     - Human
     - Dog
+    - Human
+    - Bitter Sweet
     - Human
     - Dog
     - Human
     - Bitter Sweets
     sentences:
-    - '*Scratches at door*'
-    - '*Shakes his head*'
-    - I'm sorry, boy, but we can't go outside right now. It's not safe out there.
-    - '*Whines and continues to scratch at the door*'
-    - I know you want to go outside and play, but we can't. There was a nuclear explosion,
-      and it's not safe for us to be outside.
-    - '*Looks at the human, still not understanding*'
-    - Trust me, buddy, I wish we could go outside too. But we have to stay in here
-      to stay safe. We'll find something to do, I promise.
-    - '*Whines again but eventually gives up and goes to lay down in his favorite
-      spot*'
-    - I wish I could explain everything to you, but I know you don't understand.
-      I just want you to know that I'm here with you, and I'll do everything I can
-      to keep us safe.
+    - The dog jumps up onto the couch next to the human and snuggles close to him.
+      The human smiles and strokes the dog's fur.
+    - You're such a good dog, always trying to make me feel better.
+    - '*Looks up at the human with his big, brown eyes, and wags his tail*'
+    - It's nice to have you here with me, buddy. You always know how to make me feel
+      better, even in the toughest of times.
+    - The dog puts his head on the human's lap, and the human continues to stroke
+      his fur.
+    - I know things are scary right now. But as long as we have each other, we'll
+      be okay. We'll find a way to make it through this, I promise.
+    - '*Whines softly, as if to say he understands and is there for the human*'
+    - Thank you, buddy. You're such a good dog. I don't know what I'd do without
+      you.
     - The human gets up and goes to the kitchen to prepare some food for the both
       of them. The dog watches him, still curious about what's going on outside but
       content to be with his human.
