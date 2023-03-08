@@ -2798,6 +2798,8 @@ MonoBehaviour:
     - Dog
     - Human
     - Human
+    - Human
+    - Human
     - Dog
     - Human
     - Dog
@@ -2806,23 +2808,28 @@ MonoBehaviour:
     - Human
     - Bitter Sweets
     sentences:
-    - '*Scratches at door*'
-    - '*Shakes his head*'
-    - I'm sorry, boy, but we can't go outside right now. It's not safe out there.
-    - '*Whines and continues to scratch at the door*'
-    - I know you want to go outside and play, but we can't. There was a nuclear explosion,
-      and it's not safe for us to be outside.
-    - '*Looks at the human, still not understanding*'
-    - Trust me, buddy, I wish we could go outside too. But we have to stay in here
-      to stay safe. We'll find something to do, I promise.
-    - '*Whines again but eventually gives up and goes to lay down in his favorite
-      spot*'
-    - I wish I could explain everything to you, but I know you don't understand.
-      I just want you to know that I'm here with you, and I'll do everything I can
-      to keep us safe.
-    - The human gets up and goes to the kitchen to prepare some food for the both
-      of them. The dog watches him, still curious about what's going on outside but
-      content to be with his human.
+    - '*Paws at the empty bowl, looking up at the human with pleading eyes*'
+    - Oh, I'm sorry buddy. I forgot to fill your bowl.
+    - '*Gets up from the couch and walks over to the kitchen, grabbing a bag of dog
+      food from the pantry*'
+    - '*Pours some into the bowl and sets it down in front of the dog*'
+    - There you go, buddy. Sorry about that.
+    - '*Eagerly starts to eat, tail wagging as he enjoys his meal*'
+    - I know it's not much, but I'll make sure you have enough food for the next
+      few days. We have to be careful with what we have, though. We don't know when
+      we'll be able to get more.
+    - '*Finishes his meal and looks up at the human, his tongue lolling out of his
+      mouth*'
+    - You're such a good boy. I'm glad I have you here with me. You make everything
+      a little bit easier.
+    - '*Wags his tail and jumps up onto the couch next to the human, snuggling up
+      against him*'
+    - You're a good snuggler too, buddy.
+    - 'The human strokes the dog''s fur, lost in thought as he wonders how they''ll
+      make it through the next few days. But for now, they have each other, and that''s
+      enough to keep them going.
+
+'
 --- !u!114 &1685477555
 MonoBehaviour:
   m_ObjectHideFlags: 0
