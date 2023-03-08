@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 102971046}
   - component: {fileID: 102971045}
   - component: {fileID: 102971044}
+  - component: {fileID: 102971047}
   m_Layer: 0
   m_Name: human
   m_TagString: Human
@@ -393,7 +394,74 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemClicked: 0
+  dialogueTrigger: {fileID: 102971047}
   itemName: 
+--- !u!114 &102971047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102971041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76bea0b18045d496087247b176a0ace8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Dog
+    - Human
+    - Dog
+    - Human
+    - Bitter Sweets
+    - Human
+    - Bitter Sweets
+    - Human
+    - Bitter Sweets
+    - Human
+    - Bitter Sweets
+    - Human
+    - Bitter Sweets
+    - Human
+    - Bitter Sweets
+    sentences:
+    - '*Looks up at the human expectantly, his tail wagging*'
+    - What's up, buddy? Do you need something?
+    - '*Continues to look at the human, his gaze unwavering*'
+    - Oh, I see. You want to play, don't you?
+    - The dog barks excitedly, and the human smiles.
+    - Okay, let's play. But we have to be careful not to make too much noise, okay?
+      We don't want to attract any unwanted attention.
+    - 'The human gets up from the couch and rummages through a drawer, eventually
+      pulling out a small ball. The dog''s eyes light up, and he jumps off the couch,
+      ready to play.
+
+'
+    - Here you go, buddy. Let's see if you can catch it.
+    - 'The human tosses the ball, and the dog chases after it, his tail wagging furiously.
+      They play for a little while, the human tossing the ball and the dog happily
+      fetching it.
+
+'
+    - You're such a good boy, buddy. I'm so glad we can still have a little bit of
+      fun, even in times like these.
+    - The dog barks in agreement, and the human laughs.
+    - Okay, okay. One more throw, and then we have to take a break, okay?
+    - 'The human throws the ball one more time, and the dog chases after it. They
+      both take a break, panting from their playtime, but the dog looks up at the
+      human, ready to play some more.
+
+'
+    - Not right now, buddy. We'll play again later. But for now, we have to rest.
+    - 'The dog looks a little disappointed, but he lays down at the human''s feet,
+      content to be with his human. They sit together in silence, the human lost
+      in thought, and the dog watching him closely, as if trying to understand what''s
+      going on.
+
+'
+  itemsClicked: 0
+  humanButton: {fileID: 0}
 --- !u!1 &434569484
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,6 +475,7 @@ GameObject:
   - component: {fileID: 434569489}
   - component: {fileID: 434569488}
   - component: {fileID: 434569487}
+  - component: {fileID: 434569490}
   m_Layer: 0
   m_Name: door
   m_TagString: Door
@@ -536,6 +605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemClicked: 0
+  dialogueTrigger: {fileID: 434569490}
   itemName: 
 --- !u!50 &434569489
 Rigidbody2D:
@@ -558,52 +628,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &478608067
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 478608068}
-  - component: {fileID: 478608072}
-  - component: {fileID: 478608071}
-  - component: {fileID: 478608070}
-  - component: {fileID: 478608069}
-  m_Layer: 5
-  m_Name: HumanButton
-  m_TagString: humanButton
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &478608068
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478608067}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1193950986}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -98.02189, y: 57.3097}
-  m_SizeDelta: {x: 48.3326, y: 202.9656}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &478608069
+--- !u!114 &434569490
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478608067}
+  m_GameObject: {fileID: 434569484}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76bea0b18045d496087247b176a0ace8, type: 3}
@@ -613,150 +644,34 @@ MonoBehaviour:
     names:
     - Dog
     - Human
+    - Human
+    - Dog
+    - Human
+    - Dog
+    - Human
     - Dog
     - Human
     - Bitter Sweets
-    - Human
-    - Bitter Sweets
-    - Human
-    - Bitter Sweets
-    - Human
-    - Bitter Sweets
-    - Human
-    - Bitter Sweets
-    - Human
-    - Bitter Sweets
     sentences:
-    - '*Looks up at the human expectantly, his tail wagging*'
-    - What's up, buddy? Do you need something?
-    - '*Continues to look at the human, his gaze unwavering*'
-    - Oh, I see. You want to play, don't you?
-    - The dog barks excitedly, and the human smiles.
-    - Okay, let's play. But we have to be careful not to make too much noise, okay?
-      We don't want to attract any unwanted attention.
-    - 'The human gets up from the couch and rummages through a drawer, eventually
-      pulling out a small ball. The dog''s eyes light up, and he jumps off the couch,
-      ready to play.
-
-'
-    - Here you go, buddy. Let's see if you can catch it.
-    - 'The human tosses the ball, and the dog chases after it, his tail wagging furiously.
-      They play for a little while, the human tossing the ball and the dog happily
-      fetching it.
-
-'
-    - You're such a good boy, buddy. I'm so glad we can still have a little bit of
-      fun, even in times like these.
-    - The dog barks in agreement, and the human laughs.
-    - Okay, okay. One more throw, and then we have to take a break, okay?
-    - 'The human throws the ball one more time, and the dog chases after it. They
-      both take a break, panting from their playtime, but the dog looks up at the
-      human, ready to play some more.
-
-'
-    - Not right now, buddy. We'll play again later. But for now, we have to rest.
-    - 'The dog looks a little disappointed, but he lays down at the human''s feet,
-      content to be with his human. They sit together in silence, the human lost
-      in thought, and the dog watching him closely, as if trying to understand what''s
-      going on.
-
-'
+    - '*Scratches at door*'
+    - '*Shakes his head*'
+    - I'm sorry, boy, but we can't go outside right now. It's not safe out there.
+    - '*Whines and continues to scratch at the door*'
+    - I know you want to go outside and play, but we can't. There was a nuclear explosion,
+      and it's not safe for us to be outside.
+    - '*Looks at the human, still not understanding*'
+    - Trust me, buddy, I wish we could go outside too. But we have to stay in here
+      to stay safe. We'll find something to do, I promise.
+    - '*Whines again but eventually gives up and goes to lay down in his favorite
+      spot*'
+    - I wish I could explain everything to you, but I know you don't understand.
+      I just want you to know that I'm here with you, and I'll do everything I can
+      to keep us safe.
+    - The human gets up and goes to the kitchen to prepare some food for the both
+      of them. The dog watches him, still curious about what's going on outside but
+      content to be with his human.
   itemsClicked: 0
-  humanButton: {fileID: 478608070}
---- !u!114 &478608070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478608067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 478608071}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 478608069}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &478608071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478608067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &478608072
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478608067}
-  m_CullTransparentMesh: 1
+  humanButton: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +781,7 @@ GameObject:
   - component: {fileID: 556673913}
   - component: {fileID: 556673912}
   - component: {fileID: 556673911}
+  - component: {fileID: 556673914}
   m_Layer: 0
   m_Name: couch
   m_TagString: Couch
@@ -1064,7 +980,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemClicked: 0
+  dialogueTrigger: {fileID: 556673914}
   itemName: 
+--- !u!114 &556673914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556673908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76bea0b18045d496087247b176a0ace8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Bitter Sweet
+    - Human
+    - Dog
+    - Human
+    - Bitter Sweet
+    - Human
+    - Dog
+    - Human
+    - Bitter Sweets
+    sentences:
+    - The dog jumps up onto the couch next to the human and snuggles close to him.
+      The human smiles and strokes the dog's fur.
+    - You're such a good dog, always trying to make me feel better.
+    - '*Looks up at the human with his big, brown eyes, and wags his tail*'
+    - It's nice to have you here with me, buddy. You always know how to make me feel
+      better, even in the toughest of times.
+    - The dog puts his head on the human's lap, and the human continues to stroke
+      his fur.
+    - I know things are scary right now. But as long as we have each other, we'll
+      be okay. We'll find a way to make it through this, I promise.
+    - '*Whines softly, as if to say he understands and is there for the human*'
+    - Thank you, buddy. You're such a good dog. I don't know what I'd do without
+      you.
+    - The human gets up and goes to the kitchen to prepare some food for the both
+      of them. The dog watches him, still curious about what's going on outside but
+      content to be with his human.
+  itemsClicked: 0
+  humanButton: {fileID: 0}
 --- !u!1 &597275783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,7 +1302,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1193950986}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1375,7 +1334,7 @@ MonoBehaviour:
     - Throughout the night, he dreams of playing outside, chasing his tennis ball
       through the green grass, unaware of the devastation that has occurred outside.
   itemsClicked: 0
-  humanButton: {fileID: 478608070}
+  humanButton: {fileID: 0}
 --- !u!114 &752810251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1470,192 +1429,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752810248}
   m_CullTransparentMesh: 1
---- !u!1 &776313696
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 776313697}
-  - component: {fileID: 776313701}
-  - component: {fileID: 776313700}
-  - component: {fileID: 776313699}
-  - component: {fileID: 776313698}
-  m_Layer: 5
-  m_Name: WindowButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &776313697
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776313696}
-  m_LocalRotation: {x: -0, y: -0, z: 0.11076277, w: 0.9938469}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1193950986}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12.719}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -352.27454, y: 104.136536}
-  m_SizeDelta: {x: 132.935, y: 70.3445}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &776313698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776313696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76bea0b18045d496087247b176a0ace8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    names:
-    - Dog
-    - Human
-    - Human
-    - Human
-    - Dog
-    - Human
-    - Human
-    - Human
-    - Dog
-    - Human
-    - Bitter Sweets
-    sentences:
-    - '*Looks out the window at the mushroom cloud in the distance, and whimpers
-      softly*'
-    - It's a scary sight, isn't it?
-    - '*Walks over to the window and looks out, his expression solemn*'
-    - I never thought it would come to this. The world was already in such a fragile
-      state, and it just took one mistake, one moment of miscommunication, to bring
-      us all to the brink of destruction.
-    - '*Looks up at the human, listening to his words but not understanding their
-      meaning*'
-    - It's hard to believe that just a few days ago, everything was so normal. People
-      were going about their lives, doing their jobs, spending time with their families.
-      And now... now it's all gone.
-    - '*Looks down at the dog and strokes his fur*'
-    - But we're still here, buddy. You and me. And as long as we're together, we'll
-      make it through this.
-    - '*Wags his tail and licks the human''s hand, sensing the comfort in his words*'
-    - I wish I could explain everything to you, but I know you don't understand.
-      All you know is that something bad has happened, and we have to stay inside
-      to stay safe. But we'll find a way to make it through, I promise.
-    - 'The human sits down next to the dog and begins to pet him, lost in thought
-      as he thinks about the world outside and what the future might hold. The dog
-      rests his head on the human''s lap, content to be with his human and hopeful
-      for what might come next.
-
-'
-  itemsClicked: 0
-  humanButton: {fileID: 478608070}
---- !u!114 &776313699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776313696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 776313700}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 776313698}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &776313700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776313696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &776313701
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776313696}
-  m_CullTransparentMesh: 1
 --- !u!1 &858262115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1669,6 +1442,7 @@ GameObject:
   - component: {fileID: 858262120}
   - component: {fileID: 858262119}
   - component: {fileID: 858262118}
+  - component: {fileID: 858262121}
   m_Layer: 0
   m_Name: dogBowl
   m_TagString: Bowl
@@ -1829,7 +1603,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemClicked: 0
+  dialogueTrigger: {fileID: 858262121}
   itemName: 
+--- !u!114 &858262121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858262115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76bea0b18045d496087247b176a0ace8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Dog
+    - Human
+    - Human
+    - Human
+    - Human
+    - Dog
+    - Human
+    - Dog
+    - Human
+    - Dog
+    - Human
+    - Bitter Sweets
+    sentences:
+    - '*Paws at the empty bowl, looking up at the human with pleading eyes*'
+    - Oh, I'm sorry buddy. I forgot to fill your bowl.
+    - '*Gets up from the couch and walks over to the kitchen, grabbing a bag of dog
+      food from the pantry*'
+    - '*Pours some into the bowl and sets it down in front of the dog*'
+    - There you go, buddy. Sorry about that.
+    - '*Eagerly starts to eat, tail wagging as he enjoys his meal*'
+    - I know it's not much, but I'll make sure you have enough food for the next
+      few days. We have to be careful with what we have, though. We don't know when
+      we'll be able to get more.
+    - '*Finishes his meal and looks up at the human, his tongue lolling out of his
+      mouth*'
+    - You're such a good boy. I'm glad I have you here with me. You make everything
+      a little bit easier.
+    - '*Wags his tail and jumps up onto the couch next to the human, snuggling up
+      against him*'
+    - You're a good snuggler too, buddy.
+    - 'The human strokes the dog''s fur, lost in thought as he wonders how they''ll
+      make it through the next few days. But for now, they have each other, and that''s
+      enough to keep them going.
+
+'
+  itemsClicked: 0
+  humanButton: {fileID: 0}
 --- !u!1 &890935018
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,6 +1833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemClicked: 0
+  dialogueTrigger: {fileID: 0}
   itemName: 
 --- !u!50 &1004875546
 Rigidbody2D:
@@ -2278,8 +2105,8 @@ Canvas:
   m_GameObject: {fileID: 1193950982}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2288,7 +2115,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1193950986
 RectTransform:
@@ -2301,11 +2128,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1495722333}
-  - {fileID: 776313697}
-  - {fileID: 1685477553}
-  - {fileID: 1983243807}
-  - {fileID: 478608068}
   - {fileID: 752810249}
   - {fileID: 1220435700}
   m_Father: {fileID: 0}
@@ -2350,7 +2172,7 @@ RectTransform:
   - {fileID: 890935019}
   - {fileID: 1584504689}
   m_Father: {fileID: 1193950986}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.45624346}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2370,7 +2192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9500749, g: 0.9622642, b: 0.7761659, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2578,183 +2400,6 @@ Transform:
   m_Father: {fileID: 1762597583}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1495722332
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1495722333}
-  - component: {fileID: 1495722336}
-  - component: {fileID: 1495722335}
-  - component: {fileID: 1495722334}
-  - component: {fileID: 1495722337}
-  m_Layer: 5
-  m_Name: DoorButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1495722333
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495722332}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1193950986}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 140.75476, y: 67.34836}
-  m_SizeDelta: {x: 102.1223, y: 145.7554}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1495722334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495722332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1495722335}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1495722337}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1495722335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495722332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1495722336
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495722332}
-  m_CullTransparentMesh: 1
---- !u!114 &1495722337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495722332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76bea0b18045d496087247b176a0ace8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    names:
-    - Dog
-    - Human
-    - Human
-    - Dog
-    - Human
-    - Dog
-    - Human
-    - Dog
-    - Human
-    - Bitter Sweets
-    sentences:
-    - '*Scratches at door*'
-    - '*Shakes his head*'
-    - I'm sorry, boy, but we can't go outside right now. It's not safe out there.
-    - '*Whines and continues to scratch at the door*'
-    - I know you want to go outside and play, but we can't. There was a nuclear explosion,
-      and it's not safe for us to be outside.
-    - '*Looks at the human, still not understanding*'
-    - Trust me, buddy, I wish we could go outside too. But we have to stay in here
-      to stay safe. We'll find something to do, I promise.
-    - '*Whines again but eventually gives up and goes to lay down in his favorite
-      spot*'
-    - I wish I could explain everything to you, but I know you don't understand.
-      I just want you to know that I'm here with you, and I'll do everything I can
-      to keep us safe.
-    - The human gets up and goes to the kitchen to prepare some food for the both
-      of them. The dog watches him, still curious about what's going on outside but
-      content to be with his human.
-  itemsClicked: 0
-  humanButton: {fileID: 478608070}
 --- !u!1 &1584504688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3033,190 +2678,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660692844}
   m_CullTransparentMesh: 1
---- !u!1 &1685477552
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1685477553}
-  - component: {fileID: 1685477557}
-  - component: {fileID: 1685477556}
-  - component: {fileID: 1685477555}
-  - component: {fileID: 1685477554}
-  m_Layer: 5
-  m_Name: BowlButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1685477553
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685477552}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1193950986}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 251.50922, y: -80.99188}
-  m_SizeDelta: {x: 49.4229, y: 32.0156}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1685477554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685477552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76bea0b18045d496087247b176a0ace8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    names:
-    - Dog
-    - Human
-    - Human
-    - Human
-    - Human
-    - Dog
-    - Human
-    - Dog
-    - Human
-    - Dog
-    - Human
-    - Bitter Sweets
-    sentences:
-    - '*Paws at the empty bowl, looking up at the human with pleading eyes*'
-    - Oh, I'm sorry buddy. I forgot to fill your bowl.
-    - '*Gets up from the couch and walks over to the kitchen, grabbing a bag of dog
-      food from the pantry*'
-    - '*Pours some into the bowl and sets it down in front of the dog*'
-    - There you go, buddy. Sorry about that.
-    - '*Eagerly starts to eat, tail wagging as he enjoys his meal*'
-    - I know it's not much, but I'll make sure you have enough food for the next
-      few days. We have to be careful with what we have, though. We don't know when
-      we'll be able to get more.
-    - '*Finishes his meal and looks up at the human, his tongue lolling out of his
-      mouth*'
-    - You're such a good boy. I'm glad I have you here with me. You make everything
-      a little bit easier.
-    - '*Wags his tail and jumps up onto the couch next to the human, snuggling up
-      against him*'
-    - You're a good snuggler too, buddy.
-    - 'The human strokes the dog''s fur, lost in thought as he wonders how they''ll
-      make it through the next few days. But for now, they have each other, and that''s
-      enough to keep them going.
-
-'
-  itemsClicked: 0
-  humanButton: {fileID: 478608070}
---- !u!114 &1685477555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685477552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1685477556}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1685477554}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1685477556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685477552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1685477557
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685477552}
-  m_CullTransparentMesh: 1
 --- !u!1 &1757013826
 GameObject:
   m_ObjectHideFlags: 0
@@ -3286,7 +2747,7 @@ Transform:
   - {fileID: 597275785}
   - {fileID: 3344290}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1839120317
 GameObject:
@@ -3400,7 +2861,7 @@ Transform:
   - {fileID: 102971043}
   - {fileID: 1004875544}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1941427956
 GameObject:
@@ -3415,6 +2876,7 @@ GameObject:
   - component: {fileID: 1941427961}
   - component: {fileID: 1941427960}
   - component: {fileID: 1941427959}
+  - component: {fileID: 1941427962}
   m_Layer: 0
   m_Name: window
   m_TagString: Window
@@ -3587,53 +3049,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemClicked: 0
+  dialogueTrigger: {fileID: 1941427962}
   itemName: 
---- !u!1 &1983243806
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1983243807}
-  - component: {fileID: 1983243811}
-  - component: {fileID: 1983243810}
-  - component: {fileID: 1983243809}
-  - component: {fileID: 1983243808}
-  m_Layer: 5
-  m_Name: CouchButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1983243807
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983243806}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1193950986}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -201.506, y: 24.051514}
-  m_SizeDelta: {x: 122.1883, y: 89.8249}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1983243808
+--- !u!114 &1941427962
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983243806}
+  m_GameObject: {fileID: 1941427956}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76bea0b18045d496087247b176a0ace8, type: 3}
@@ -3641,125 +3065,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Bitter Sweet
+    - Dog
+    - Human
+    - Human
     - Human
     - Dog
     - Human
-    - Bitter Sweet
+    - Human
     - Human
     - Dog
     - Human
     - Bitter Sweets
     sentences:
-    - The dog jumps up onto the couch next to the human and snuggles close to him.
-      The human smiles and strokes the dog's fur.
-    - You're such a good dog, always trying to make me feel better.
-    - '*Looks up at the human with his big, brown eyes, and wags his tail*'
-    - It's nice to have you here with me, buddy. You always know how to make me feel
-      better, even in the toughest of times.
-    - The dog puts his head on the human's lap, and the human continues to stroke
-      his fur.
-    - I know things are scary right now. But as long as we have each other, we'll
-      be okay. We'll find a way to make it through this, I promise.
-    - '*Whines softly, as if to say he understands and is there for the human*'
-    - Thank you, buddy. You're such a good dog. I don't know what I'd do without
-      you.
-    - The human gets up and goes to the kitchen to prepare some food for the both
-      of them. The dog watches him, still curious about what's going on outside but
-      content to be with his human.
+    - '*Looks out the window at the mushroom cloud in the distance, and whimpers
+      softly*'
+    - It's a scary sight, isn't it?
+    - '*Walks over to the window and looks out, his expression solemn*'
+    - I never thought it would come to this. The world was already in such a fragile
+      state, and it just took one mistake, one moment of miscommunication, to bring
+      us all to the brink of destruction.
+    - '*Looks up at the human, listening to his words but not understanding their
+      meaning*'
+    - It's hard to believe that just a few days ago, everything was so normal. People
+      were going about their lives, doing their jobs, spending time with their families.
+      And now... now it's all gone.
+    - '*Looks down at the dog and strokes his fur*'
+    - But we're still here, buddy. You and me. And as long as we're together, we'll
+      make it through this.
+    - '*Wags his tail and licks the human''s hand, sensing the comfort in his words*'
+    - I wish I could explain everything to you, but I know you don't understand.
+      All you know is that something bad has happened, and we have to stay inside
+      to stay safe. But we'll find a way to make it through, I promise.
+    - 'The human sits down next to the dog and begins to pet him, lost in thought
+      as he thinks about the world outside and what the future might hold. The dog
+      rests his head on the human''s lap, content to be with his human and hopeful
+      for what might come next.
+
+'
   itemsClicked: 0
-  humanButton: {fileID: 478608070}
---- !u!114 &1983243809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983243806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1983243810}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1983243808}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1983243810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983243806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1983243811
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983243806}
-  m_CullTransparentMesh: 1
+  humanButton: {fileID: 0}

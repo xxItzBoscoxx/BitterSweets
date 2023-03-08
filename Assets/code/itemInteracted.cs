@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class itemInteracted : MonoBehaviour
 {
     public bool itemClicked;
+    public DialogueTrigger dialogueTrigger;
     public string itemName;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class itemInteracted : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) {
             itemName = gameObject.tag;
             itemClicked = true;
+            dialogueTrigger.TriggerDialogue();
         }
     }
 }
