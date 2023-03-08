@@ -8,17 +8,24 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     private Queue<string> sentences;
+    private Queue<string> names;
     // Start is called before the first frame update
     void Start()
     {
+        names = new Queue<string>();
         sentences = new Queue<string>();
     }
 
     public void StartDialogue(Dialogue dialogue){
 
-        nameText.text = dialogue.name;
+        //nameText.text = dialogue.name;
 
+        names.Clear();
         sentences.Clear();
+
+        foreach(string name in dialogue.names){
+            names.Enqueue(name);
+        }
 
         foreach(string sentence in dialogue.sentences){
             sentences.Enqueue(sentence);
@@ -33,6 +40,8 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        string name = names.Dequeue();
+        nameText.text = name;
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
@@ -48,6 +57,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     void EndDialogue(){
+        
         Debug.Log("End of conversation");
     }
 }

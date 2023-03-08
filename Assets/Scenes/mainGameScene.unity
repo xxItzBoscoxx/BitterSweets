@@ -2072,9 +2072,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Dog
+    names:
+    - Dog
+    - Human
+    - Human
+    - Dog
+    - Human
+    - Dog
+    - Human
+    - Dog
+    - Human
+    - Bitter Sweets
     sentences:
     - '*Scratches at door*'
+    - '*Shakes his head*'
+    - I'm sorry, boy, but we can't go outside right now. It's not safe out there.
+    - '*Whines and continues to scratch at the door*'
+    - I know you want to go outside and play, but we can't. There was a nuclear explosion,
+      and it's not safe for us to be outside.
+    - '*Looks at the human, still not understanding*'
+    - Trust me, buddy, I wish we could go outside too. But we have to stay in here
+      to stay safe. We'll find something to do, I promise.
+    - '*Whines again but eventually gives up and goes to lay down in his favorite
+      spot*'
+    - I wish I could explain everything to you, but I know you don't understand.
+      I just want you to know that I'm here with you, and I'll do everything I can
+      to keep us safe.
+    - The human gets up and goes to the kitchen to prepare some food for the both
+      of them. The dog watches him, still curious about what's going on outside but
+      content to be with his human.
 --- !u!1 &1584504688
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,7 +2469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Human
+    names: []
     sentences:
     - human speaky speak
     - more more more
