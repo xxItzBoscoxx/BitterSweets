@@ -330,7 +330,7 @@ MonoBehaviour:
       through the green grass, unaware of the devastation that has occurred outside.
   itemsClicked: 0
   dialogueManager: {fileID: 0}
-  humanButton: {fileID: 0}
+  human: {fileID: 0}
 --- !u!114 &752810251
 MonoBehaviour:
   m_ObjectHideFlags: 0

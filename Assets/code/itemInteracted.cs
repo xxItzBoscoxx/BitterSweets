@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class itemInteracted : MonoBehaviour
 {
-    public bool itemClicked;
     public bool isInteractable;
     public DialogueTrigger dialogueTrigger;
     public DialogueManager dialogueManager;
@@ -15,16 +14,19 @@ public class itemInteracted : MonoBehaviour
     void Start()
     {
         dialogueManager = FindObjectOfType<DialogueManager>();
-        itemClicked = false;
         isInteractable = true;
+        if(gameObject.tag == "Human"){
+            isInteractable = false;
+        }
     }
 
     void OnMouseOver(){
-        if (Input.GetMouseButtonDown(0) && !itemClicked && !dialogueManager.dialogueOpen) {
+        if (Input.GetMouseButtonDown(0) && isInteractable && !dialogueManager.dialogueOpen) {
             itemName = gameObject.tag;
-            itemClicked = true;
             dialogueTrigger.TriggerDialogue();
             isInteractable = false;
+            GetComponent<Renderer>().material.color = startcolor;
+            mouseControl.instance.Default();
         }
     }
 
@@ -40,7 +42,9 @@ public class itemInteracted : MonoBehaviour
      }
      void OnMouseExit()
      {
-         GetComponent<Renderer>().material.color = startcolor;
-         mouseControl.instance.Default();
+         if(isInteractable && !dialogueManager.dialogueOpen){
+            GetComponent<Renderer>().material.color = startcolor;
+            mouseControl.instance.Default();
+         }
      }
 }

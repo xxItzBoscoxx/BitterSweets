@@ -9,25 +9,19 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public int itemsClicked;
     public DialogueManager dialogueManager;
-    public Button humanButton;
+    public GameObject human;
 
     public void Start(){
-        //humanButton.interactable = false;
+        human = GameObject.FindWithTag("Human");
         dialogueManager = FindObjectOfType<DialogueManager>();
         itemsClicked = dialogueManager.clicked;
     }
 
     public void Update(){
-        if(itemsClicked == 4){
-            Debug.Log("yay");
-            humanButton.interactable = true;
-            //Debug.Log(humanButton.IsInteractable());
-        }
+        
     }
 
     public void TriggerDialogue(){
-        itemsClicked += 1;
-        Debug.Log(itemsClicked);
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 
