@@ -15,12 +15,6 @@ public class itemInteracted : MonoBehaviour
         itemClicked = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnMouseOver(){
         Debug.Log("here");
         if (Input.GetMouseButtonDown(0)) {
@@ -29,4 +23,18 @@ public class itemInteracted : MonoBehaviour
             dialogueTrigger.TriggerDialogue();
         }
     }
+
+    private Color startcolor;
+     void OnMouseEnter()
+     {
+         startcolor = GetComponent<Renderer>().material.color;
+         GetComponent<Renderer>().material.color = Color.red;
+         mouseControl.instance.Clickable();
+
+     }
+     void OnMouseExit()
+     {
+         GetComponent<Renderer>().material.color = startcolor;
+         mouseControl.instance.Default();
+     }
 }

@@ -414,17 +414,17 @@ MonoBehaviour:
     - Human
     - Dog
     - Human
-    - Bitter Sweets
+    - Narrator
     - Human
-    - Bitter Sweets
+    - Narrator
     - Human
-    - Bitter Sweets
+    - Narrator
     - Human
-    - Bitter Sweets
+    - Narrator
     - Human
-    - Bitter Sweets
+    - Narrator
     - Human
-    - Bitter Sweets
+    - Narrator
     sentences:
     - '*Looks up at the human expectantly, his tail wagging*'
     - What's up, buddy? Do you need something?
@@ -541,13 +541,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434569484}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8064476, y: -0.7468032, z: -1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0144128725, w: 0.99989617}
+  m_LocalPosition: {x: 0.78, y: -0.83, z: -1.0000001}
   m_LocalScale: {x: 0.7817686, y: 0.7955921, z: 0.16583222}
   m_Children: []
   m_Father: {fileID: 1757013827}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.652}
 --- !u!60 &434569487
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -651,7 +651,7 @@ MonoBehaviour:
     - Human
     - Dog
     - Human
-    - Bitter Sweets
+    - Narrator
     sentences:
     - '*Scratches at door*'
     - '*Shakes his head*'
@@ -721,7 +721,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0.1308665, b: 0.21698111, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -996,15 +996,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Bitter Sweet
+    - Narrator
     - Human
     - Dog
     - Human
-    - Bitter Sweet
+    - Narrator
     - Human
     - Dog
     - Human
-    - Bitter Sweets
+    - Narrator
     sentences:
     - The dog jumps up onto the couch next to the human and snuggles close to him.
       The human smiles and strokes the dog's fur.
@@ -1323,9 +1323,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Bitter Sweets
-    - Bitter Sweets
-    - Bitter Sweets
+    - Narrator
+    - Narrator
+    - Narrator
     sentences:
     - At the end of day 1, the human gives the dog a treat to help him sleep through
       the night. The dog eagerly takes the treat from the human's hand and eats it.
@@ -1630,7 +1630,7 @@ MonoBehaviour:
     - Human
     - Dog
     - Human
-    - Bitter Sweets
+    - Narrator
     sentences:
     - '*Paws at the empty bowl, looking up at the human with pleading eyes*'
     - Oh, I'm sorry buddy. I forgot to fill your bowl.
@@ -1748,6 +1748,7 @@ GameObject:
   - component: {fileID: 1004875545}
   - component: {fileID: 1004875547}
   - component: {fileID: 1004875546}
+  - component: {fileID: 1004875548}
   m_Layer: 0
   m_Name: dog
   m_TagString: Untagged
@@ -1833,7 +1834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemClicked: 0
-  dialogueTrigger: {fileID: 0}
+  dialogueTrigger: {fileID: 1004875548}
   itemName: 
 --- !u!50 &1004875546
 Rigidbody2D:
@@ -1912,6 +1913,25 @@ PolygonCollider2D:
       - {x: 0.42499998, y: -0.049999997}
     - - {x: -0.015, y: -0.48999998}
       - {x: -0.015, y: -0.53}
+--- !u!114 &1004875548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004875542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76bea0b18045d496087247b176a0ace8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Dog
+    sentences:
+    - '*WOOF WOOF*'
+  itemsClicked: 0
+  humanButton: {fileID: 0}
 --- !u!1 &1083284344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,7 +2134,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 916532617
   m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1193950986
@@ -2599,6 +2619,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1614007569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1614007571}
+  - component: {fileID: 1614007570}
+  m_Layer: 0
+  m_Name: MouseControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1614007570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614007569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fa878b9cc6740ab83fdd9bf4a5886e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: 2e71a8202d3b4a3448ec85ced5a40265, type: 3}
+  clickableCursor: {fileID: 2800000, guid: 96d4bfdb0d6d8c042bf8fccf6524d239, type: 3}
+--- !u!4 &1614007571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614007569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.038944837, y: -3.958394, z: -98.69408}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1660692844
 GameObject:
   m_ObjectHideFlags: 0
@@ -3075,7 +3140,7 @@ MonoBehaviour:
     - Human
     - Dog
     - Human
-    - Bitter Sweets
+    - Narrator
     sentences:
     - '*Looks out the window at the mushroom cloud in the distance, and whimpers
       softly*'
