@@ -629,6 +629,7 @@ MonoBehaviour:
   nameText: {fileID: 1083284346}
   dialogueText: {fileID: 890935020}
   clicked: 0
+  clickables: 0
   dialogueOpen: 0
   animator: {fileID: 1220435703}
 --- !u!1 &1193950982
@@ -786,15 +787,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9500749, g: 0.9622642, b: 0.7761659, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 2d858d0f9a5b54437a8bbff04213f7c8, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1153,6 +1154,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660692844}
   m_CullTransparentMesh: 1
+--- !u!1 &1681239656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1977672412126409889, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+  m_PrefabInstance: {fileID: 1977672412023570944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1977672412023570944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1160,6 +1166,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1977672411506502004, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: m_TagString
+      value: clickable
+      objectReference: {fileID: 0}
     - target: {fileID: 1977672411506502009, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
       propertyPath: dialogueManager
       value: 
@@ -1168,6 +1178,10 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672411808090211, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: m_TagString
+      value: clickable
+      objectReference: {fileID: 0}
     - target: {fileID: 1977672411808090216, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
       propertyPath: dialogueManager
       value: 
@@ -1236,6 +1250,14 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672412126409889, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977672412126409894, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: humanDude
+      value: 
+      objectReference: {fileID: 1681239656}
     - target: {fileID: 1977672412126409894, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
       propertyPath: dialogueManager
       value: 
@@ -1244,6 +1266,10 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672412432843532, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: m_TagString
+      value: clickable
+      objectReference: {fileID: 0}
     - target: {fileID: 1977672412432843536, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
       propertyPath: dialogueManager
       value: 
@@ -1252,6 +1278,10 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672412874314996, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: m_TagString
+      value: clickable
+      objectReference: {fileID: 0}
     - target: {fileID: 1977672412874315001, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
       propertyPath: dialogueManager
       value: 

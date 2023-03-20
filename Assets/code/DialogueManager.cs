@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     public int clicked;
+    public int clickables; 
     public bool dialogueOpen;
     public Animator animator;
     private Queue<string> sentences;
@@ -15,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        clickables = -1;
         dialogueOpen = false;
         names = new Queue<string>();
         sentences = new Queue<string>();

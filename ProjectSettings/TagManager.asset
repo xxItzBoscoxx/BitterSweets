@@ -15,6 +15,7 @@ TagManager:
   - picture
   - clock
   - humanButton
+  - clickable
   layers:
   - Default
   - TransparentFX
