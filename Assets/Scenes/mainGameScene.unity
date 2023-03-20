@@ -461,6 +461,7 @@ MonoBehaviour:
 
 '
   itemsClicked: 0
+  dialogueManager: {fileID: 0}
   humanButton: {fileID: 0}
 --- !u!1 &434569484
 GameObject:
@@ -671,6 +672,7 @@ MonoBehaviour:
       of them. The dog watches him, still curious about what's going on outside but
       content to be with his human.
   itemsClicked: 0
+  dialogueManager: {fileID: 0}
   humanButton: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
@@ -1023,6 +1025,7 @@ MonoBehaviour:
       of them. The dog watches him, still curious about what's going on outside but
       content to be with his human.
   itemsClicked: 0
+  dialogueManager: {fileID: 0}
   humanButton: {fileID: 0}
 --- !u!1 &597275783
 GameObject:
@@ -1334,6 +1337,7 @@ MonoBehaviour:
     - Throughout the night, he dreams of playing outside, chasing his tennis ball
       through the green grass, unaware of the devastation that has occurred outside.
   itemsClicked: 0
+  dialogueManager: {fileID: 0}
   humanButton: {fileID: 0}
 --- !u!114 &752810251
 MonoBehaviour:
@@ -1655,6 +1659,7 @@ MonoBehaviour:
 
 '
   itemsClicked: 0
+  dialogueManager: {fileID: 0}
   humanButton: {fileID: 0}
 --- !u!1 &890935018
 GameObject:
@@ -1690,7 +1695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.84261346, y: 3.4243011}
+  m_AnchoredPosition: {x: 0.84261346, y: -1}
   m_SizeDelta: {x: 653.61, y: 62.8299}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890935020
@@ -1931,6 +1936,7 @@ MonoBehaviour:
     sentences:
     - '*WOOF WOOF*'
   itemsClicked: 0
+  dialogueManager: {fileID: 0}
   humanButton: {fileID: 0}
 --- !u!1 &1083284344
 GameObject:
@@ -1966,7 +1972,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41.92923, y: 37.00125}
+  m_AnchoredPosition: {x: -41.92923, y: 32.576946}
   m_SizeDelta: {x: 177.9879, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1083284346
@@ -2056,6 +2062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1083284346}
   dialogueText: {fileID: 890935020}
+  clicked: 0
   animator: {fileID: 1220435703}
 --- !u!1 &1193950982
 GameObject:
@@ -2194,10 +2201,10 @@ RectTransform:
   m_Father: {fileID: 1193950986}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.45624346}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0064049, y: -188.7182}
-  m_SizeDelta: {x: 123.25, y: 92.5733}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 80}
+  m_SizeDelta: {x: 123.25, y: 113.5733}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1220435701
 MonoBehaviour:
@@ -3168,4 +3175,5 @@ MonoBehaviour:
 
 '
   itemsClicked: 0
+  dialogueManager: {fileID: 0}
   humanButton: {fileID: 0}

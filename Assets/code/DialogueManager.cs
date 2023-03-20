@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    public int clicked;
     public Animator animator;
     private Queue<string> sentences;
     private Queue<string> names;
@@ -15,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     {
         names = new Queue<string>();
         sentences = new Queue<string>();
+        clicked = 0;
     }
 
     public void StartDialogue(Dialogue dialogue){
@@ -38,6 +40,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence(){
         if(sentences.Count == 0){
+            clicked += 1;
             EndDialogue();
             return;
         }

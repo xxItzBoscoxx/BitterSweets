@@ -8,10 +8,12 @@ public class DialogueTrigger : MonoBehaviour
 
     public Dialogue dialogue;
     public int itemsClicked;
+    public DialogueManager dialogueManager;
     public Button humanButton;
 
     public void Start(){
-        itemsClicked = 0;
+        dialogueManager = FindObjectOfType<DialogueManager>();
+        itemsClicked = dialogueManager.clicked;
     }
 
     public void Update(){

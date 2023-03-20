@@ -17,7 +17,7 @@ public class itemInteracted : MonoBehaviour
 
     void OnMouseOver(){
         Debug.Log("here");
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButtonDown(0) && !itemClicked) {
             itemName = gameObject.tag;
             itemClicked = true;
             dialogueTrigger.TriggerDialogue();
