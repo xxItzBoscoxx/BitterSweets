@@ -8,19 +8,21 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     public int clicked;
+    public bool dialogueOpen;
     public Animator animator;
     private Queue<string> sentences;
     private Queue<string> names;
     // Start is called before the first frame update
     void Start()
     {
+        dialogueOpen = false;
         names = new Queue<string>();
         sentences = new Queue<string>();
         clicked = 0;
     }
 
     public void StartDialogue(Dialogue dialogue){
-
+        dialogueOpen = true;
         //nameText.text = dialogue.name;
         animator.SetBool("IsOpen", true);
 
@@ -62,7 +64,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     void EndDialogue(){
-        
+        dialogueOpen = false;
         animator.SetBool("IsOpen", false);
     }
 }

@@ -12,6 +12,7 @@ public class DialogueTrigger : MonoBehaviour
     public Button humanButton;
 
     public void Start(){
+        //humanButton.interactable = false;
         dialogueManager = FindObjectOfType<DialogueManager>();
         itemsClicked = dialogueManager.clicked;
     }
@@ -20,7 +21,7 @@ public class DialogueTrigger : MonoBehaviour
         if(itemsClicked == 4){
             Debug.Log("yay");
             humanButton.interactable = true;
-            Debug.Log(humanButton.IsInteractable());
+            //Debug.Log(humanButton.IsInteractable());
         }
     }
 

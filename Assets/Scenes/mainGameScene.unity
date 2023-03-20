@@ -629,6 +629,7 @@ MonoBehaviour:
   nameText: {fileID: 1083284346}
   dialogueText: {fileID: 890935020}
   clicked: 0
+  dialogueOpen: 0
   animator: {fileID: 1220435703}
 --- !u!1 &1193950982
 GameObject:
@@ -1159,6 +1160,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1977672411506502009, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672411506502010, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672411808090216, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672411808090217, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1118885244}
     - target: {fileID: 1977672411910131146, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
       propertyPath: m_Name
       value: Day1Objects
@@ -1211,5 +1228,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1977672411929406745, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672411929406748, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672412126409894, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672412126409895, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672412432843536, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672412432843538, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672412874315001, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1118885244}
+    - target: {fileID: 1977672412874315002, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1118885244}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9372f18eb62b44e7b3675f49956dc28, type: 3}
